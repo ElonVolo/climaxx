@@ -1,13 +1,13 @@
 {
-  "name": "create-nodejs-ts",
-  "version": "3.0.2",
-  "description": "NodeJS Starter Project Kit",
+  "name": "climaxx",
+  "version": "1.0.0",
+  "description": "A merely adequate Typescript framework for creating simple CLI utlities",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "private": false,
   "bin": {
-    "create-nodejs-ts": "cmd/create-nodejs-ts/index.js"
+    "climaxx": "cmd/climaxx/index.js"
   },
   "scripts": {
     "start": "node dist/main.js",
@@ -23,16 +23,16 @@
     "format:check": "prettier \"./**\" --ignore-unknown --check"
   },
   "author": {
-    "name": "Vitor Hugo Salgado",
-    "email": "vsalgadopb@gmail.com",
-    "url": "https://github.com/vitorsalgado"
+    "name": "Elon Volo",
+    "email": "elonvolo@gmail.com",
+    "url": "https://github.com/elonvolo"
   },
   "license": "MIT",
-  "repository": "git+https://github.com/vitorsalgado/create-nodejs-ts.git",
+  "repository": "git+https://github.com/elonvolo/climaxx.git",
   "bugs": {
-    "url": "https://github.com/vitorsalgado/create-nodejs-ts/issues"
+    "url": "https://github.com/elonvolo/climaxx/issues"
   },
-  "homepage": "https://github.com/vitorsalgado/create-nodejs-ts#readme",
+  "homepage": "https://github.com/elonvolo/climaxx#readme",
   "keywords": [
     "nodejs",
     "nodejs-boilerplate",

@@ -1,0 +1,132 @@
+{
+  "command": {
+    "options": [
+      {
+        "variable": "babel",
+        "description": "apply babeljs to the transform file",
+        "type": "flag",
+        "default": false,
+        "negatable": true,
+        "long": "babel"
+      },
+      {
+        "variable": "cpus",
+        "description": "start at most N child processes to process source files",
+        "type": "numeric",
+        "short": "c",
+        "custom_constraint_message": "(default: max(all - 1, 1))",
+        "long": "cpus"
+      },
+      {
+        "variable": "dry",
+        "description": "dry run (no changes are made to files)",
+        "type": "flag",
+        "negatable": "true",
+        "default": false,
+        "short": "d",
+        "long": "dry"
+      },
+      {
+        "variable": "extensions",
+        "description": "transform files with these file extensions (comma separated list",
+        "type": "string",
+        "variadic": true,
+        "variadic_placeholer": "EXT",
+        "default": ["js"],
+        "long": "extensions"
+      },
+      {
+        "variable": "ignoreConfig",
+        "description": "ignore files if they match patterns sourced from a configuration file (e.g. a .gitignore)",
+        "type": "string",
+        "variadic": true,
+        "variadic_placeholer": "FILE ...",
+        "long": "ignore-config"
+      },
+      {
+        "variable": "ignorePattern",
+        "description": "ignore files that match a provided glob expression",
+        "type": "string",
+        "variadic": true,
+        "variadic_placeholer": "GLOB ...",
+        "long": "ignore-pattern"
+      },
+      {
+        "variable": "parser",
+        "description": "the parser to use for parsing the source files",
+        "type": "string",
+        "choices": ["auto", "babel", "babylon", "flow", "ts", "tsx"],
+        "default": "auto",
+        "long": "parser"
+      },
+      {
+        "variable": "print",
+        "description": "print transformed files to stdout, useful for development",
+        "type": "flag",
+        "negatable": true,
+        "default": false,
+        "short": "p",
+        "long": "print"
+      },
+      {
+        "variable": "runInBand",
+        "description": "run serially in the current process",
+        "type": "flag",
+        "negatable": true,
+        "default": false,
+        "long": "run-in-band"
+      },
+      {
+        "variable": "silent",
+        "description": "do not write to stdout or stderr",
+        "type": "flag",
+        "negatable": true,
+        "default": false,
+        "long": "silent"
+      },
+      {
+        "variable": "stdin",
+        "description": "read file/directory list from stdin",
+        "type": "flag",
+        "negatable": true,
+        "default": false,
+        "long": "stdin"
+      },
+      {
+        "variable": "transform",
+        "description": "path to the transform file. Can be either a local path or url",
+        "type": "string",
+        "default": "./transform.js",
+        "short": "t",
+        "long": "transform"
+      },
+      {
+        "variable": "verbose",
+        "description": "show more information about the transform process",
+        "type": "number",
+        "choices": [0, 1, 2],
+        "default": 0,
+        "short": "v",
+        "long": "verbose"
+      },
+      {
+        "variable": "failOnError",
+        "description": "return a 1 exit code when errors were found during execution of codemods",
+        "type": "flag",
+        "long": "failOnError"
+      },
+      {
+        "variable": "gitignore",
+        "description": "Shortcut to use the .gitignore in the current directory as the ignore file for the transformation",
+        "type": "flag",
+        "long": "gitignore"
+      }
+    ],
+    "subcommand": [
+      {
+        "long": "version",
+        "type": "version"
+      }
+    ]
+  }
+}
